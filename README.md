@@ -1,6 +1,6 @@
 # aaPanel-6.8.37
 
-### Hướng dãn sử dụng：
+### Hướng dẫn sử dụng：
 
 ✨Cài đặt:
 ```
