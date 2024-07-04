@@ -66,9 +66,7 @@ nginx_126='1.26.1' #Thử nghiệm
 
 openresty='1.25.3.1'
 
-
-
-<br><br><br>
+<br><br>
 
 ### ModSecurity-nginx.sh
 
@@ -92,9 +90,9 @@ openresty='1.25.3.1'
 Lưu ý: ModSecurity-nginx.sh không cài đặt phần phụ thuộc tương ứng trên các hệ thống không phải hệ thống ubuntu/debian.
 
 ✨ Cách sử dụng ModSecurity-nginx.sh: 
-
-     rm -f /www/server/panel/install/nginx.sh && wget -O  /www/server/panel/install/nginx.sh https://raw.githubusercontent.com/zeronxdev/aapanel/main/ModSecurity-nginx.sh -T 20 && bash /www/server/panel/install/nginx.sh install 1.24
-
+```
+rm -f /www/server/panel/install/nginx.sh && wget -O  /www/server/panel/install/nginx.sh https://raw.githubusercontent.com/zeronxdev/aapanel/main/ModSecurity-nginx.sh -T 20 && bash /www/server/panel/install/nginx.sh install 1.24
+```
 
 Đường dẫn ModSecurity：/www/server/nginx/owasp/ModSecurity
 
@@ -116,7 +114,7 @@ Mã nguồn：https://github.com/coreruleset/coreruleset/releases
 
 【【【默认会编译成静态模块下面这句无需添加，只有编译成动态模块时候才会需要引入.so文件】】】
 
-根据<a href="https://www.netnea.com/cms/nginx-tutorial-6_embedding-modsecurity/"  target="_blank">官方文档</a>步骤五在nginx.conf文件添加引入。将以下代码添加在worker_rlimit_nofile 51200;下面即可引入
+Tham khảo <a href="https://www.netnea.com/cms/nginx-tutorial-6_embedding-modsecurity/"  target="_blank">Tài liệu</a>步骤五在nginx.conf文件添加引入。将以下代码添加在worker_rlimit_nofile 51200;下面即可引入
 
      load_module /www/server/nginx/modules/ngx_http_modsecurity_module.so;
 
@@ -128,21 +126,20 @@ Mã nguồn：https://github.com/coreruleset/coreruleset/releases
 编辑规则全局引入文件。这里面可以引入你需要的规则
 文件路径： /www/server/nginx/owasp/conf/main.conf
 
-在你的网站配置文件内添加以下代码
+Thêm mã sau vào tệp cấu hình trang web của bạn
 
      modsecurity on;
      modsecurity_rules_file /www/server/nginx/owasp/conf/main.conf;
 
-然后编辑/www/server/nginx/owasp/conf/main.conf文件在里面引入你需要的规则文件即可
+Sau đó chỉnh sửa tệp /www/server/nginx/owasp/conf/main.conf và thêm các tệp quy tắc bạn
 
-所有国则文件都在/www/server/nginx/owasp/owasp-rules/rules里面
+Tất cả các tệp quy tắc đều nằm trong /www/server/nginx/owasp/owasp-rules/rules
 
-/www/server/nginx/owasp/conf/nginx-wordpress.conf文件是针对wordpress程序的一些常用拒绝规则，需要在网站的nginx配置文件里面引入
+/www/server/nginx/owasp/conf/nginx-wordpress.conf là một số quy tắc từ chối phổ biến đối với các chương trình wordpress và cần được thêm vào tệp cấu hình nginx của trang web.
 
+Chú ý sửa lại số phiên bản ở cuối lệnh nginx 1.24 được cài đặt mặc định.
 
-注意修改命令尾部的版本号，默认安装 nginx 1.24
-
-支持版本：
+♦ Các phiên bản được hỗ trợ:
 
 tengine='3.1.0'
 
@@ -172,9 +169,9 @@ nginx_123='1.23.4'
 
 nginx_124='1.24.0'
 
-nginx_125='1.25.5' # 未测试是否可用
+nginx_125='1.25.5' # Thử nghiệm
 
-nginx_126='1.26.1' # 未测试是否可用
+nginx_126='1.26.1' # Thử nghiệm
 
 openresty='1.25.3.1'
 
