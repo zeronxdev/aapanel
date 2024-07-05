@@ -93,17 +93,17 @@ rm -f /www/server/panel/install/nginx.sh && wget -O  /www/server/panel/install/n
 ```
 Chú ý sửa lại số phiên bản ở cuối lệnh nginx 1.24 được cài đặt mặc định
 
-Đường dẫn ModSecurity：/www/server/nginx/owasp/ModSecurity
++ Đường dẫn ModSecurity：/www/server/nginx/owasp/ModSecurity
 
 Mã nguồn：https://github.com/SpiderLabs/ModSecurity
 
-ModSecurity-nginx dựa trên nginx
++ ModSecurity-nginx dựa trên nginx
 
 Đường dẫn：/www/server/nginx/owasp/ModSecurity-nginx
 
 Mã nguồn：https://github.com/SpiderLabs/ModSecurity-nginx
 
-Phiên bản mới nhất của tệp quy tắc OWASP CRS được tải xuống theo mặc định
++ Phiên bản mới nhất của tệp quy tắc OWASP CRS được tải xuống theo mặc định
 
 Lưu trữ tệp trong /www/server/nginx/owasp/owasp-rules
 
