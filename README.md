@@ -111,7 +111,7 @@ Mã nguồn：https://github.com/coreruleset/coreruleset/releases
 
 ### Tài liệu chính thức
 
-[[[Theo mặc định, dữ liệu sẽ được biên dịch thành mô-đun tĩnh. Chỉ khi được biên dịch thành mô-đun động, bạn mới cần thêm tệp .so]]]
+[[ Theo mặc định, dữ liệu sẽ được biên dịch thành mô-đun tĩnh. Chỉ khi được biên dịch thành mô-đun động, bạn mới cần thêm tệp .so ]]
 
 ✨Tham khảo <a href="https://www.netnea.com/cms/nginx-tutorial-6_embedding-modsecurity/"  target="_blank">Tài liệu</a>Thêm đoạn mã sau vào ngay dưới dòng worker_rlimit_nofile 51200; để sử dụng cấu hình:
 
