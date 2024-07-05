@@ -66,7 +66,6 @@ nginx_126='1.26.1' #Thử nghiệm
 
 openresty='1.25.3.1'
 
-<br>
 ### ModSecurity-nginx.sh
 
 ✨ModSecurity-nginx.sh bổ sung tường lửa ModSecurity (OWASP CRS) dựa trên nginx.sh
