@@ -2,7 +2,7 @@
 
 ### Hướng dẫn sử dụng：
 
-✨Cài đặt:
+✨Cài đặt panel:
 ```
      bash <(curl -Ls https://raw.githubusercontent.com/zeronxdev/aapanel/main/install.sh)
 ```
