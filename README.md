@@ -4,7 +4,7 @@
 
 ✨Cài đặt panel:
 ```
-     bash <(curl -Ls https://raw.githubusercontent.com/zeronxdev/aapanel/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/zeronxdev/aapanel/main/install.sh)
 ```
 
 
