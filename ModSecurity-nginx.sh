@@ -3,13 +3,12 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 LANG=en_US.UTF-8
 
-######### 检测是否是root用户 ###################
+######### YÊU CẦU ROOT ###################
 if [ "$(id -u)" -ne 0 ]; then
-  echo "此脚本需要以root用户运行。"
+  echo "Tập lệnh này cần được chạy bằng người dùng root"
   exit 1
 fi
-
-echo "你是以root用户运行此脚本。脚本继续运行"
+echo "Đã đáp ứng yêu cầu, script tiếp tục chạy"
 
 public_file=/www/server/panel/install/public.sh
 . $public_file
