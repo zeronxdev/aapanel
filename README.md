@@ -1,3 +1,4 @@
+[![Github All Releases](https://img.shields.io/github/downloads/zeronxdev/aapanel/total.svg)]()
 # aaPanel-6.8.37
 
 ### Hướng dẫn sử dụng：
